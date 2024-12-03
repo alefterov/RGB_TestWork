@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="comon.css">
+    <link rel="stylesheet" href="src/styles/comon.css">
 </head>
+
 <body>
-    <div >
+    <div class="container">
+        <header class="main-header">
 
-    </div>
-    <header class="main-header">
-        <div class="container">
-            <div class="wrapper">
+            <div class="header-wrapper">
+                <div class="asside-menu-icon">
+                    <svg width="42" height="10" viewBox="0 0 42 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="9.5" x2="42" y2="9.5" stroke="#E8E8E8" />
+                        <line y1="0.5" x2="42" y2="0.5" stroke="#E8E8E8" />
+                    </svg>
+                </div>
+                <div class="header-logo">
+                    <svg width="200" height="68" viewBox="0 0 200 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.58016 0L0 8.99688L0 17.9898L0 20.8841L0 45.5533L0 59.0031L8.58016 68L191.42 68L200 59.0031V23.4715L98.1937 23.4715L98.1937 44.3566L180.083 44.3566V47.1149L19.9168 47.1149L19.9168 20.8841L200 20.8841V8.99688L191.42 0L8.58016 0Z"
+                            fill="#E8E8E8" />
+                    </svg>
+                </div>
+                <nav class="header-menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Послуги <span>+</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Проєкти</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Про нас</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Цікава аналітика</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <article class="consult">
+                    <button class="consult-button">
+                        <div class="consult-icons">
+                            <svg id="cosult-arrow-top" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.51641 2.90942L11.4302 8.7207L6.51641 14.532" stroke="black" />
+                                <path d="M0.0253589 8.49561L11.5978 8.54639" stroke="black" />
+                            </svg>
+                            <svg id="cosult-arrow-bottom" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.51641 2.90942L11.4302 8.7207L6.51641 14.532" stroke="black" />
+                                <path d="M0.0253589 8.49561L11.5978 8.54639" stroke="black" />
+                            </svg>
+                        </div>
+                        <span>Консультація</span>
+                    </button>
+                    <div class="consult-popap">
 
+                    </div>
+                </article>
             </div>
-            <h1>Test Work</h1>
-        </div>
-        
-    </header>
-    <main>
-        <div class="container">
-            <section class="product-card">
 
-            </section>
-        </div>
-    </main>
-    <footer>
 
-    </footer>
+        </header>
+        <main>
+            <div class="container">
+                <section class="product-section">
+                    <article class="product">
+
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="src/scripts/main.js" defer></script>
 </body>
+
 </html>
