@@ -1,17 +1,22 @@
 @font-face {
     font-family: "PP Object Sans";
-    src: url("./../fonts/PPObjectSans-Regular.otf");
+    src: url("./../fonts/ObjectSans-Regular.ttf");
+    font-weight: normal;
 }
+/* @font-face {
+    font-family: "PP Object Sans";
+    src: url("./../fonts/ObjectSans-Heavy.ttf");
+    font-weight: bold;
+} */
 * {
     margin: 0;
     padding: 0;
     font-style: none;
-    font-family: "PP Object Sans", sans-serif;
-    font-size: 20px;
+    font-family: "PP Object Sans";
 }
-h1 {
-    font-size: 2rem;
-    font-weight: 700;
+button {
+    border: none;
+    box-shadow: none;
 }
 li {
     list-style: none;
@@ -34,15 +39,16 @@ a {
     flex-direction: column;
 }
 .main-header {
-    width: calc(100% - 4.5rem);
+    width: calc(100% - 80px);
     max-width: 1920px;
-    height: 4.25rem;
+    height: 68px;
     position: absolute;
-    top:  2.25rem;
+    top:  40px;
     left: auto;
     margin: 0 auto;
     border: 1px solid #4d4d4d;
-    border-radius: 10px 10px 0 0 ;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
 }
 .header-wrapper {
     width: 100%;
@@ -53,14 +59,154 @@ a {
 }
 body {
     background-image: url(./../img/background-section-1.jpg);
-    background-size: 120%;
+    background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
 }
 .menu-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-menu {
-    width: 40%;
+.menu-item {
+    margin: 30px;
+}
+.asside-menu-icon {
+    width: 42px;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+.asside-menu-icon {
+   margin: 30px; 
+}
+.logo-icon {
+    height: 68px;
+}
+.consult-button {
+    clip-path: polygon(0 0,100% 0,100% 100%, 24px 100%,0 calc(100% - 24px),0 100%);
+    border-radius: 10px 10px 0 0;
+    background-color: #71c575;
+    height: 68px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consult-button span {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    margin-left: 8px;
+}
+.consult-icons {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+#cosult-arrow-top, #cosult-arrow-bottom {
+    position: absolute;
+}
+#cosult-arrow-top {
+    top: 0;
+    left: 0;
+}
+#cosult-arrow-bottom {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+.bordered-block {
+    width: calc(100% - 80px);
+    height: calc(100vh - 156px);
+    position: absolute;
+    top: 108px;
+    bottom: 48px;
+    box-sizing: border-box;
+    border: 1px solid #4d4d4d;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+}
+main {
+    width: calc(100% - 80px);
+    display: flex;
+    margin-top: 108px;
+    height: calc(100vh - 156px);
+}
+.asside-menu {
+    height: 100%;
+    width: 99px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-right: 2px solid #4d4d4d;
+    border-radius: 0 0 0 10px;
+}
+.main-banner {
+    width: 100%;
+    padding: 48px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+h1 {
+    font-family: "PP Object Sans";
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #e8e8e8;
+}
+h1 > span.title-green {
+    color: #71c575;
+}
+h1 > span {
+    display: block;
+}
+.title-mid-span {
+    margin-left: 108px;
+}
+.main-right-bar {
+    max-width: 152px;
+    display: flex;
+    flex-direction: column;
+}
+.main-global-logo {
+    margin-bottom: 40px;
+}
+.logo-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(232, 232, 232, 1);
+}
+.page-controller {
+    display: flex;
+    width: 100%;
+}
+.controller-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.controller-button:hover {
+    transition: 0.3s; 
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.controller-button.left-button {
+    transform: rotate(180deg);
+    margin-right: 10px;
 }
